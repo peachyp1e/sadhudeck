@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  background: #060409;
+  color: #768340;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+}
+
+
+.container {
+      max-width: 480px; /* важно для мобилки */
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+.section {
+      margin-bottom: 32px;
+    }
+
+h1 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+p {
+      line-height: 1.5;
+      margin-top: 0;
+      font-size: 16px;
+    }
+
+.card {
+      background: white;
+      padding: 16px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+
+    /* чуть лучше на больших экранах */
+@media (min-width: 768px) {
+      .container {
+        max-width: 600px;
+      }
+    }
+
+
+
+
+    /* по классам для удобства стилизации */
+
+
+.about {
+      font-size: 18px;/* стили для секции "О себе" */
+    }
+
+.profile-pic {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 16px;
+    }
+
+/* .formats {
+      /* стили для секции "Услуги" *
+    } */
+
+.format-description {
+      font-size: 22px;
+      margin-bottom: 20px;
+      background: #222222;
+      border-radius: 9px;
+    }
+
+.format-description:hover {
+      background: #333333;
+    }
+
+.format-text {
+      font-size: 18px;
+      color: #768340;
+    }
+
+.format-details {
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+/*.format-suits-block {
+    background: #f3efe8;
+    padding: 12px;
+    border-radius: 12px;
+    }*/
+
+.suits-when {
+      font-size: 18px;
+    }
+
+.suits-item {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+.format-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-top: 8px;
+    }
+
+.format-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 20px;
+      align-items: start;
+    }
+  
+  .disclaimer {
+    display: inline;
+      font-size: 13px;
+      color: #ae9abb;
+      margin-top: 8px;
+    }
+
+.section.buttons {
+      display: grid;
+      align-items: start;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+    }
+
+.button {
+      background: #51375b;
+      color: white;
+      display: block;
+      text-align: center;
+      padding: 14px;
+      margin-top: 10px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+.button:hover {
+      background: #5a3598;
+    }
+
+
+/*советы жипити*/
+  
+.format-text {
+  margin-top: 4px;
+}
+
+.format-suits .suits-when {
+  list-style: none;
+  margin-left: -18px; /* компенсируем отступ списка */
+}
+
+.format-suits li {
+  list-style: none;
+  position: relative;
+  padding-left: 18px;
+}
+
+.format-suits li::before {
+  content: "✦"; /* можно ☾ ✦ ⟡ */
+  position: absolute;
+  left: 0;
+  color: #8a9a5b;
+}
+
+.format-suits .suits-when::before {
+  content: none;
+}
+
+.format-suits .suits-when {
+  margin-bottom: 10px; /* поиграйся 8–14px */
+}
+
+.format-text p {
+  margin-top: 0;
+}
+
+.format-suits {
+  margin-top: 0;
+}
+
+.format-suits-block {
+  margin-top: 8px; /* попробуй 2–6px */
+}
+
+summary {
+  list-style: none;
+  padding-left: 10px;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* для Chrome/Safari */
+}
+
+summary::before {
+  content: "➤";
+  right: 0;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+details[open] summary::before {
+  transform: rotate(45deg);
+}
